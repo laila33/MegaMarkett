@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;500;600;700&display=swap");
+@plugin "daisyui";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Welcome-div {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: #666666;
+}
+
+.firsticonandp {
+  width: 180px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.threeParagraph {
+  width: 112px;
+  height: 18px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #666666;
+}
+#span1 {
+  color: #000000;
+}
+.border-between {
+  width: 10px;
+  height: 10px;
+  background-color: #23010106;
+}
+#searchP {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #000000;
+}
+.carosalP {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.carosalH1 {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 63px;
+  leading-trim: NONE;
+  line-height: 63px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.CarouselP2{
+  font-family: "Host Grotesk", sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 30px;
+leading-trim: NONE;
+line-height: 30px;
+letter-spacing: 0%;
+color :#FFFFFF;
+}
+.next,.pre{
+  background-color: white  !important;
+  color: blue  !important;
+}
