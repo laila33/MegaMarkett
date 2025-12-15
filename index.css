@@ -78,20 +78,63 @@
   leading-trim: NONE;
   line-height: 63px;
   letter-spacing: 0%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.CarouselP2{
+.CarouselP2 {
   font-family: "Host Grotesk", sans-serif;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 30px;
-leading-trim: NONE;
-line-height: 30px;
-letter-spacing: 0%;
-color :#FFFFFF;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #ffffff;
 }
-.next,.pre{
-  background-color: white  !important;
-  color: blue  !important;
+.next,
+.pre {
+  background-color: white !important;
+  color: blue !important;
+}
+#smartphoneP {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #666666;
+  span {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #008ecc;
+  }
+}
+
+.title {
+  font-family: "Host Grotesk", sans-serif;
+  color: #222222;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.original-price {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #222222;
 }
