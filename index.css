@@ -138,3 +138,33 @@
   letter-spacing: 0%;
   color: #222222;
 }
+
+.contact {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.footers {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.most {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 450;
+  font-style: SemiBold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
