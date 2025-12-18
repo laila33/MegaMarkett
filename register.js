@@ -26,4 +26,5 @@ registerForm.addEventListener("submit", function (e) {
 
     alert("Account created successfully!");
     registerForm.reset(); 
+    window.location.href = "index.html";
 });
