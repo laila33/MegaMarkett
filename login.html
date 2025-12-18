@@ -16,42 +16,56 @@
         <div class="absolute top-4 left-1/2 -translate-x-1/2
             flex items-stretch  w-[90%] md:w-[85%] lg:w-[80%]">
             <img src="./images/img2.png" class="w-[60%] h-auto rounded-3xl object-cover relative">
-            <div class="bg-white p-4 rounded-xl w-1/2 shadow flex items-center justify-center  absolute items-stretch  h-full right-0 ">
-                <div class="flex flex-col items-center justify-center">
-                    <h1 id="login">Login your account!</h1>
-                    <div class="flex gap-6 mt-3">
-                        <a href="#">E-mail</a>
-                        <a href="#">Mopile Number</a>
-                    </div>
-
-                    <div class="flex flex-col gap-3 mt-3">
-                        <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white">
-                            <img src="./images/Email Icon Container.png" class="w-5 h-5 mr-2" alt="">
-                            <input type="text" placeholder="Email" class="w-full outline-none bg-transparent">
+            <form id="loginForm" action="">
+                <div
+                    class="bg-white p-4 rounded-xl w-1/2 shadow flex items-center justify-center absolute items-stretch h-full right-0">
+                    <div class="flex flex-col items-center justify-center">
+                        <h1 id="login">Login your account!</h1>
+                        <div class="flex gap-6 mt-3">
+                            <a href="#">E-mail</a>
+                            <a href="#">Mobile Number</a>
                         </div>
-                        <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white">
-                            <img src="./images/hugeicons_lock.png" class="w-5 h-5 mr-2" alt="">
-                            <input type="password" placeholder="Password" class="w-full outline-none bg-transparent">
-                        </div>
-                    </div>
-                    <a href="#" class="self-end text-sm mt-3">
-                        Forget password?
-                    </a>
-                    <div class="w-full flex  justify-center mt-5 p-2"
-                        style="background: linear-gradient(90deg, #A3DCFF 0%, #3CB4FF 100%);">
-                        <button class=" text-white">Continue</button>
 
+                        <div class="flex flex-col gap-3 mt-3">
+                            <div class="flex flex-col">
+                                <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                                    <img src="./images/Email Icon Container.png" class="w-5 h-5 mr-2" alt="">
+                                    <input type="text" id="email" name="email" placeholder="Email"
+                                        class="w-full outline-none bg-transparent" required>
+                                </div>
+                                <span id="emailError" class="text-red-500 text-sm mt-1"></span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                                    <img src="./images/hugeicons_lock.png" class="w-5 h-5 mr-2" alt="">
+                                    <input type="password" id="password" name="password" placeholder="Password"
+                                        class="w-full outline-none bg-transparent" required>
+                                </div>
+                                <span id="passwordError" class="text-red-500 text-sm mt-1"></span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="self-end text-sm mt-3">
+                            Forget password?
+                        </a>
+
+                        <div class="w-full flex justify-center mt-5 p-2"
+                            style="background: linear-gradient(90deg, #A3DCFF 0%, #3CB4FF 100%);">
+                            <button type="submit" class="text-white">Continue</button>
+                        </div>
+
+                        <p class="my-3">Sign in with</p>
+                        <img src="./images/Sign In Options Icons Container (1).png" class="my-3">
+                        <p>Don't have an account?<span class="text-blue-600"> <a href="./register.html">Sign up</a></span></p>
                     </div>
-                    <p class="my-3">Sign in with</p>
-                    <img src="./images/Sign In Options Icons Container (1).png" class="my-3">
-                    <p>Dont have an account?<span class="text-blue-600"> Sign up</span></p>
                 </div>
-
-            </div>
+            </form>
 
         </div>
 
     </div>
+    <script src="./Login.js"></script>
 </body>
 
 

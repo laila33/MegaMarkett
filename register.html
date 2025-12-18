@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Create new account </title>
+</head>
+
+<body class="flex items-center justify-center min-h-screen">
+    <div class="relative">
+        <img src="./images/img1.png" class="max-w-[90%] max-h-[85vh] mx-auto">
+
+        <div class="absolute top-4 left-1/2 -translate-x-1/2
+            flex items-stretch  w-[90%] md:w-[85%] lg:w-[80%]">
+            <img src="./images/img2.png" class="w-[60%] h-auto rounded-3xl object-cover relative">
+            <form id="registerForm" action="">
+                <div
+                    class="bg-white p-4 rounded-xl w-1/2 shadow flex items-center justify-center absolute items-stretch h-full right-0 ">
+                    <div class="flex flex-col items-center justify-center">
+                        <h1 id="login">Create your account!</h1>
+                        <h4 class="item-start">Enter your Full Details</h4>
+
+                        <div class="flex flex-col gap-3 mt-3">
+                            <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white gap-3">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" id="username" name="username" placeholder="User name"
+                                    class="w-full outline-none bg-transparent">
+                            </div>
+                            <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white gap-3">
+                                <i class="fa-regular fa-envelope-open"></i>
+                                <input type="email" id="regEmail" name="email" placeholder="Email"
+                                    class="w-full outline-none bg-transparent">
+                            </div>
+                            <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white gap-3">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="number" id="phone" name="phone" placeholder="Phone"
+                                    class="w-full outline-none bg-transparent">
+                            </div>
+                            <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                                <img src="./images/hugeicons_lock.png" class="w-5 h-5 mr-2" alt="">
+                                <input type="password" id="regPassword" name="password" placeholder="Password"
+                                    class="w-full outline-none bg-transparent">
+                            </div>
+                        </div>
+
+                        <div class="flex self-start mt-3 gap-1 justify-center items-center">
+                            <img src="./images/el_ok-circle.png" width="13px" height="10px">
+                            <p class="text-[#56BFFF]">Remember me</p>
+                        </div>
+
+                        <div class="w-full flex justify-center mt-5 p-2"
+                            style="background: linear-gradient(90deg, #A3DCFF 0%, #3CB4FF 100%);">
+                            <button class=" text-white" type="submit">Continue</button>
+                        </div>
+
+                        <p class="my-3">Sign in with</p>
+                        <img src="./images/Sign In Options Icons Container (1).png" class="my-3">
+                        <p>Dont have an account?<span class="text-blue-600"> Sign up</span></p>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="./register.js"></script>
+</body>
+
+
+
+</html>
