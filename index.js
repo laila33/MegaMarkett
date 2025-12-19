@@ -4,11 +4,16 @@ const mensContainer = document.getElementById("mens-container");
 const womensContainer = document.getElementById("womens-container");
 
 function createProductCard(product) {
+  const cardlink = document.createElement("a");
+  cardlink.href = `product-details.html?id=${product.id}`;
+  cardlink.className = "block";
+
   const card = document.createElement("div");
-  card.className = "border p-4 rounded-lg w-full";
+  card.className = "border p-4 rounded-lg w-full hover:shadow-lg transition";
 
   const imgContainer = document.createElement("div");
-  imgContainer.className = "flex items-center justify-center w-full bg-[#F5F5F5] p-2 rounded-lg";
+  imgContainer.className =
+    "flex items-center justify-center w-full bg-[#F5F5F5] p-2 rounded-lg";
   const img = document.createElement("img");
   img.src = product.image;
   img.className = "w-24 h-36 object-contain";
@@ -28,19 +33,20 @@ function createProductCard(product) {
   priceDiv.appendChild(originalPrice);
   card.appendChild(priceDiv);
 
-  return card;
+  cardlink.appendChild(card);
+  return cardlink;
 }
 
 function fetchCategoryProducts(category, container) {
   fetch(`https://fakestoreapi.com/products/category/${category}`)
-    .then(response => response.json())
-    .then(data => {
-      data.slice(0, 5).forEach(product => {
+    .then((response) => response.json())
+    .then((data) => {
+      data.slice(0, 5).forEach((product) => {
         const card = createProductCard(product);
         container.appendChild(card);
       });
     })
-    .catch(error => console.log(error));
+    .catch((error) => console.log(error));
 }
 
 fetchCategoryProducts("electronics", electronicsContainer);

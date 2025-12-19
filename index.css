@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @plugin "daisyui";
 
 * {
@@ -177,4 +178,47 @@
   leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+#title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 20px;
+}
+
+#category {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 15px;
+  /* letter-spacing: 16.5%; */
+  color: #50cc98;
+  /* margin-top: 20px; */
+}
+#d1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 15px;
+  letter-spacing: 2%;
+    margin-top: 20px;
+
+}
+
+
+#category2{
+   font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  leading-trim: NONE;
+  line-height: 15px;
+  /* letter-spacing: 16.5%; */
+  color: #50cc98;
+  /* margin-top: 20px; */
 }

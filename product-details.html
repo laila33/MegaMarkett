@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+
+
+</head>
+
+<body class="flex items-center justify-center h-screen" style="background: 
+        radial-gradient(circle  at 0% 0%, rgba(255,255,255,0.6) 0%, transparent 9%),
+        radial-gradient(circle  at 100% 0%, rgba(255,255,255,0.5), transparent 30%), 
+        radial-gradient(circle at 100% 100%, rgba(255,255,255,0.6) 0%, transparent 14%),
+        #8D9AF8;">
+    <div class="flex  flex-col md:flex-row bg-white rounded-3xl relative min-h-[600px] overflow-hidden">
+        <div class="w-full md:w-1/2 bg-[#E3E5FA]  flex flex-col">
+            <div class="flex gap-3 items-center p-5">
+                <a href="./index.html"> <i class="fa-solid fa-arrow-left text-[#6F768D]"></i>
+                </a>
+                <a href="./index.html" class="text-[#6F768D] cursor-pointer">Back to list </a>
+            </div>
+            <div class="w-full p-10 rotate-[11.42deg] ">
+                <img id="cardImg"
+                    class="w-full max-h-[300px] object-contain drop-shadow-[0_25px_30px_rgba(139,92,246,0.5)]">
+            </div>
+        </div>
+        <div class="bg-[#FAFBFC] flex flex-col p-8 max-w-xl mx-auto ">
+            <div class="bg-[#F12B2C] text-white rounded-2xl  self-start">
+                <p class="px-2">HOTSALE</p>
+            </div>
+            <p id="title" class=""></p>
+            <div class="flex gap-5 items-center mt-3">
+                <p id="category" class="flex-shrink-0"></p>
+                <div class="w-[1.5px] h-[13px] bg-[#BFBFBF]"></div>
+                <div class="flex gap-2">
+                    <i class="fa-solid fa-star" style="color: rgb(223, 223, 65);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(223, 223, 65);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(223, 223, 65);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(223, 223, 65);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(223, 223, 65);"></i>
+                </div>
+                <p>4.9 (2130 reviews)</p>
+            </div>
+            <h2 id="d1">Description:</h2>
+            <p id="description" class="mt-2"></p>
+
+        </div>
+        <div class="absolute bottom-5 flex justify-between bg-white w-[90%] p-3 rounded-2xl left-1/2  -translate-x-1/2">
+            <div class="flex gap-3">
+                <img src="" id="img1" class=" max-h-[50px] object-contain">
+                <div class="flex flex-col gap-2">
+                    <p id="title2"></p>
+                    <p id="category2"></p>
+                </div>
+            </div>
+            <div class="flex  items-center justify-center gap-10">
+                <div class="flex items-center justify-center gap-4">
+                    <p>Qyt:</p>
+                    <button id="minusBtn"
+                        class="cursor-pointer w-[20px] h-[20px] border border-[#828EF9]  flex items-center justify-center text-[#828EF9]">
+                        -</button>
+                    <div id="counterValue"
+                        class="w-[50px] h-[50px] rounded-2xl border  flex items-center justify-center"></div>
+                    <button id="plusBtn"
+                        class="cursor-pointer w-[20px] h-[20px] border border-[#828EF9]  flex items-center justify-center text-[#828EF9]">
+                        +</button>
+                </div>
+
+                <button class="bg-[#828EF9] text-white 2 p-3 rounded-2xl">ADD TO CARD</button>
+            </div>
+        </div>
+    </div>
+    <script src="./productdetails.js"></script>
+</body>
+
+</html>
