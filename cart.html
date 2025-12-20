@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping card</title>
+    <title>Shopping cart</title>
     <link rel="stylesheet" href="./index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -16,13 +16,16 @@
     <div class="bg-white rounded-2xl  flex flex-col md:flex-row items-center justify-center p-5">
         <div class="p-5">
             <div class="flex gap-3 items-center">
-                <i class="fa-solid fa-arrow-left "></i>
+                <a href="javascript:history.back()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
                 <p id="firstp">Shopping Continue</p>
             </div>
             <div class="h-[2px] bg-[#D0CFCF] m-5"></div>
             <p id="secondp" class="m-5">Shopping cart</p>
             <p id="cart-count">You have 0 items in your cart</p>
-            <div id="cards" class="flex flex-col bg-white shadow-2xl shadow-black/20 rounded-2xl p-6">
+            <div id="cards"
+                class="flex flex-col bg-white shadow-2xl shadow-black/20 rounded-2xl p-6 max-h-[400px] overflow-y-auto custom-scrollbar">
                 <!-- first card -->
                 <div class="flex items-center justify-between">
                     <div class="flex">

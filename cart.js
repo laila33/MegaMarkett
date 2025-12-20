@@ -24,39 +24,38 @@ document.addEventListener("DOMContentLoaded", async () => {
         totalAllProducts += product.price;
 
         const productHTML = `
-                    <div class="flex items-center justify-between border-b pb-4 mb-4" id="item-${
-                      product.id
-                    }">
-                        <div class="flex items-center gap-4">
-                            <img src="${
-                              product.image
-                            }" class="w-16 h-16 object-contain">
-                            <p class="font-bold text-sm w-40 truncate">${
-                              product.title
-                            }</p>
-                        </div>
-                        
-                        <div class="flex items-center gap-3">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-angle-up cursor-pointer text-xs" onclick="changeQty('${
-                                  product.id
-                                }', 1, ${product.price})"></i>
-                                <p id="qty-${
-                                  product.id
-                                }" class="font-bold">1</p>
-                                <i class="fa-solid fa-angle-down cursor-pointer text-xs" onclick="changeQty('${
-                                  product.id
-                                }', -1, ${product.price})"></i>
-                            </div>
-                            <p class="font-bold w-20 text-center" id="price-${
-                              product.id
-                            }">$${product.price.toFixed(2)}</p>
-                            <i class="fa-solid fa-trash-can text-red-500 cursor-pointer" onclick="deleteItem('${
-                              product.id
-                            }')"></i>
-                        </div>
-                    </div>
-                `;
+    <div class="flex items-center justify-between border-b pb-4 mb-4">
+        
+        <a href="./product-details.html?id=${
+          product.id
+        }" class="flex items-center gap-4 cursor-pointer hover:opacity-75 transition-opacity">
+            <img src="${product.image}" class="w-16 h-16 object-contain">
+            <p class="font-bold text-sm w-40 truncate">${product.title}</p>
+        </a>
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-angle-up cursor-pointer" onclick="changeQty('${
+              product.id
+            }', 1, ${product.price})"></i>
+            <p id="qty-${product.id}" class="font-bold">1</p>
+            <i class="fa-solid fa-angle-down cursor-pointer" onclick="changeQty('${
+              product.id
+            }', -1, ${product.price})"></i>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <p id="price-${
+              product.id
+            }" class="font-bold w-20 text-center">$${product.price.toFixed(
+          2
+        )}</p>
+            <i class="fa-solid fa-trash-can text-red-500 cursor-pointer" onclick="deleteItem('${
+              product.id
+            }')"></i>
+        </div>
+    </div>
+`;
+
+        // cardsContainer.insertAdjacentHTML("beforeend", productHTML);
 
         cardsContainer.insertAdjacentHTML("beforeend", productHTML);
       } catch (err) {
